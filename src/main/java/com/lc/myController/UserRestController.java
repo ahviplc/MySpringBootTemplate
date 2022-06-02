@@ -65,6 +65,7 @@ public class UserRestController {
 
 	/**
 	 * ping pong 测试接口
+	 *
 	 * @return
 	 */
 	@RequestMapping(value = "/ping", method = {RequestMethod.POST, RequestMethod.GET}, produces = "application/json;charset=utf-8")
