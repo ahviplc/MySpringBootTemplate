@@ -18,6 +18,12 @@ https://hutool.cn/
 
 hutool: 🍬小而全的Java工具类库，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。
 https://gitee.com/dromara/hutool
+
+GitHub - oshi/oshi: Native Operating System and Hardware Information
+https://github.com/oshi/oshi
+
+Oshi封装-OshiUtil
+https://www.hutool.cn/docs/#/system/Oshi￥ﾰﾁ￨ﾣﾅ-OshiUtil
 ```
 
 # 其他说明
