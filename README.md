@@ -81,6 +81,29 @@ SpringBoot的项目已经对有一定的异常处理了，但是对于我们开�
 *
 ```
 
+# Docker相关
+
+```markdown
+将 target/MySpringBootTemplate-0.0.1-SNAPSHOT.jar 
+和
+Dockerfile
+一起传到服务器端(已安装Docker环境) 放在同级目录
+
+然后执行指令 根据此 Dockerfile 创建 Docker 镜像
+
+docker build -t getYourMachineInfo:v1.0.0 .
+
+然后执行 创建 Docker 容器
+
+docker run -di -p 9527:9527 --name myGetYourMachineInfo getYourMachineInfo:v1.0.0
+
+登录守护式容器
+docker exec -it myGetYourMachineInfo /bin/bash
+
+查看日志
+docker logs -f --tail=30 myGetYourMachineInfo
+```
+
 # Getting Started
 
 ### Reference Documentation
