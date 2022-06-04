@@ -89,7 +89,7 @@ SpringBoot的项目已经对有一定的异常处理了，但是对于我们开�
 Dockerfile
 一起传到服务器端(已安装Docker环境) 放在同级目录
 
-然后执行指令 根据此 Dockerfile 创建 Docker 镜像 此镜像命令必须都是小写字母
+然后执行指令 根据此 Dockerfile 创建 Docker 镜像 此镜像命名必须都是小写字母
 
 docker build -t getyourmachineinfo:v1.0.0 .
 
