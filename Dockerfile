@@ -14,6 +14,11 @@ ADD target/MySpringBootTemplate-0.0.1-SNAPSHOT.jar /app.jar
 # 则要改成下面的写法 复制上下文目录下的target/app.jar 到容器里 起别名也叫为 app.jar
 # ADD target/app.jar /app.jar
 
+# 默认环境变量
+ENV APP_NAME 'Just Show Your Machine Info'
+ENV WHO_AM_I 'the Cutie'
+# ENV APP_PORT 9527
+
 # 声明暴露的端口
 EXPOSE 9527
 

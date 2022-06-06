@@ -29,10 +29,18 @@ class MySpringBootTemplateApplicationTests {
 		// System.out.println(OshiUtil.getMemory().getTotal());
 		// System.out.println(OshiUtil.getNetworkIFs());
 		System.out.println(OshiUtil.getOs());
-		System.out.println(OshiUtil.getSystem());
+		System.out.println(OshiUtil.getOs().getFamily());
+		System.out.println(OshiUtil.getOs().getVersionInfo().toString());
+		// System.out.println(SystemUtil.getOsInfo());
+		// System.out.println(OshiUtil.getSystem());
 		System.out.println(OshiUtil.getSensors());
 		// System.out.println(OshiUtil.getDiskStores());
 		// System.out.println(OshiUtil.getProcessor());
 		// System.out.println(OshiUtil.getCurrentProcess());
+
+		System.out.println(SystemUtil.getUserInfo());
+
+		// 输出环境变量属性
+		System.out.println(SystemUtil.get("user.country", false));
 	}
 }

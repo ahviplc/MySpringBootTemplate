@@ -84,9 +84,10 @@ SpringBoot的项目已经对有一定的异常处理了，但是对于我们开�
 # Docker相关
 
 ```markdown
-将 target/MySpringBootTemplate-0.0.1-SNAPSHOT.jar 
-和
-Dockerfile
+将  
+target/MySpringBootTemplate-0.0.1-SNAPSHOT.jar  
+和    
+Dockerfile  
 一起传到服务器端(已安装Docker环境) 放在同级目录
 
 然后执行指令 根据此 Dockerfile 创建 Docker 镜像 此镜像命名必须都是小写字母
@@ -97,11 +98,57 @@ docker build -t getyourmachineinfo:v1.0.0 .
 
 docker run -di -p 9527:9527 --name myGetYourMachineInfo getyourmachineinfo:v1.0.0
 
+带环境变量的执行 创建 Docker 容器 可改变默认的自定义环境变量
+
+这个端口环境变量容器弃用 端口指定 端口变更(内部端口必须是9527) 可通过 -p 9527:9527 或 -p 10001:9527
+
+docker run -di -p 9527:9527 \
+--name myGetYourMachineInfo \
+-e APP_NAME='Just Show Your Machine Info' \
+-e APP_PORT=9527 \
+getyourmachineinfo:v1.0.0
+
+这个指定了 WHO_AM_I 我是谁 使用下面这个
+
+docker run -di -p 9527:9527 \
+--name myGetYourMachineInfo \
+-e APP_NAME='Just Show Your Machine Info' \
+-e WHO_AM_I='LC' \
+getyourmachineinfo:v1.0.0
+
 登录守护式容器
+
 docker exec -it myGetYourMachineInfo /bin/bash
 
 查看日志
+
 docker logs -f --tail=30 myGetYourMachineInfo
+```
+
+# 一些接口总览
+
+> 测试接口 http://localhost:9527/api/ping
+
+> 测试接口腾讯云 http://43.142.58.153:9527/api/ping
+
+```markdown
+所有机器信息
+http://localhost:9527/api/all
+
+cpu信息
+http://localhost:9527/api/cpu
+
+内存信息
+http://localhost:9527/api/mem
+
+硬盘信息
+http://localhost:9527/api/disk
+
+系统信息
+http://localhost:9527/api/os
+
+环境变量信息
+http://localhost:9527/api/env
 ```
 
 # Getting Started
