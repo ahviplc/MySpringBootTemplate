@@ -3,6 +3,61 @@
 MySpringBootTemplate: 一个SpringBoot开发模板项目,内置了优雅的处理全局异常.
 https://gitee.com/ahviplc/MySpringBootTemplate
 
+Docker Hub for getyourmachineinfo
+https://hub.docker.com/repository/docker/ahviplc/getyourmachineinfo
+
+# 如何使用 Docker 部署我
+
+> docker pull ahviplc/getyourmachineinfo:latest
+
+> docker pull ahviplc/getyourmachineinfo:v1.0.0
+
+执行上面 docker 指令 获取其镜像之后 之后 执行下面的指令 创建容器即可
+
+具体版本 v1.0.0
+
+```shell
+docker run -di -p 9527:9527 \
+--name myGetYourMachineInfo \
+-e APP_NAME='Just Show Your Machine Info' \
+-e WHO_AM_I='LC' \
+getyourmachineinfo:v1.0.0
+```
+
+最新版本
+
+```shell
+docker run -di -p 9527:9527 \
+--name myGetYourMachineInfo \
+-e APP_NAME='Just Show Your Machine Info' \
+-e WHO_AM_I='LC' \
+getyourmachineinfo:latest
+```
+
+浏览器访问 测试接口
+
+http://localhost:9527/api/ping
+
+返回json串
+
+```json
+{
+  "code": "200",
+  "message": "成功!",
+  "result": "pong"
+}
+```
+
+即代表部署完成 访问 http://localhost:9527 即可到首页
+
+一些其他接口说明 请看如下标题部分的内容
+
+> 一些接口总览
+
+Done.
+
+# 一些链接
+
 ```markdown
 SpringBoot的全局异常处理的优雅方法_Java糖糖的博客-CSDN博客_springboot 优雅异常处理
 https://blog.csdn.net/m0_49496327/article/details/124500571
