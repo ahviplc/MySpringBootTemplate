@@ -1,5 +1,8 @@
 # MySpringBootTemplate
 
+MySpringBootTemplate: 一个SpringBoot开发模板项目,内置了优雅的处理全局异常.
+https://gitee.com/ahviplc/MySpringBootTemplate
+
 ```markdown
 SpringBoot的全局异常处理的优雅方法_Java糖糖的博客-CSDN博客_springboot 优雅异常处理
 https://blog.csdn.net/m0_49496327/article/details/124500571
