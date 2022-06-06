@@ -24,6 +24,15 @@ https://github.com/oshi/oshi
 
 Oshi封装-OshiUtil
 https://www.hutool.cn/docs/#/system/Oshi￥ﾰﾁ￨ﾣﾅ-OshiUtil
+
+SpringBoot项目中如何访问HTML页面_java_脚本之家
+https://www.jb51.net/article/230765.htm
+
+Vue2 配置 Axios api 接口调用文件的方法_含有 vue2 页面
+http://www.gimoo.net/t/1909/5d7dc5519c0e4.html
+
+vue2的生命周期_旧梦ぷ如烟的博客-CSDN博客_vue2生命周期
+https://blog.csdn.net/m0_69974492/article/details/124348644
 ```
 
 # 其他说明
