@@ -218,6 +218,18 @@ http://localhost:9527/api/os
 http://localhost:9527/api/env
 ```
 
+# ChangeLog
+
+## v1.0.0
+
+> 完成:核心功能接口和页面展示
+
+> 待做:环形展示内存使用率和cpu使用率等
+
+## v1.0.1
+
+TODO
+
 # Getting Started
 
 ### Reference Documentation
