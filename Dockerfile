@@ -8,7 +8,7 @@ MAINTAINER LC ahlc@sina.cn
 VOLUME /tmp
 
 # 复制上下文目录下的target/MySpringBootTemplate-0.0.1-SNAPSHOT.jar 到容器里 起别名为 app.jar
-ADD target/MySpringBootTemplate-0.0.1-SNAPSHOT.jar /app.jar
+ADD target/MySpringBootTemplate-1.0.1-SNAPSHOT.jar /app.jar
 
 # 如果pom.xml配置了【<finalName>app</finalName>】 所以会自动打包成 app.jar
 # 则要改成下面的写法 复制上下文目录下的target/app.jar 到容器里 起别名也叫为 app.jar

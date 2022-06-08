@@ -12,7 +12,7 @@
 
     <groupId>com.lc</groupId>
     <artifactId>MySpringBootTemplate</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>MySpringBootTemplate</name>
     <description>MySpringBootTemplate</description>
 

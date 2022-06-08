@@ -10,21 +10,7 @@ https://hub.docker.com/repository/docker/ahviplc/getyourmachineinfo
 
 > docker pull ahviplc/getyourmachineinfo:latest
 
-> docker pull ahviplc/getyourmachineinfo:v1.0.0
-
-执行上面 docker 指令 获取其镜像之后 之后 执行下面的指令 创建容器即可
-
-具体版本 v1.0.0
-
-```shell
-docker run -di -p 9527:9527 \
---name myGetYourMachineInfo \
--e APP_NAME='Just Show Your Machine Info' \
--e WHO_AM_I='LC' \
-getyourmachineinfo:v1.0.0
-```
-
-最新版本
+最新版本 latest
 
 ```shell
 docker run -di -p 9527:9527 \
@@ -32,6 +18,20 @@ docker run -di -p 9527:9527 \
 -e APP_NAME='Just Show Your Machine Info' \
 -e WHO_AM_I='LC' \
 getyourmachineinfo:latest
+```
+
+> docker pull ahviplc/getyourmachineinfo:v1.0.1
+
+执行上面 docker 指令 获取其镜像之后 之后 执行下面的指令 创建容器即可
+
+具体版本 v1.0.1
+
+```shell
+docker run -di -p 9527:9527 \
+--name myGetYourMachineInfo \
+-e APP_NAME='Just Show Your Machine Info' \
+-e WHO_AM_I='LC' \
+getyourmachineinfo:v1.0.1
 ```
 
 浏览器访问 测试接口
