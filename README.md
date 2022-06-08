@@ -236,6 +236,8 @@ http://localhost:9527/api/os
 http://localhost:9527/api/env
 ```
 
+# 一些前端展示页面总览
+
 ```markdown
 首页(status 状态页)
 Just Show Your Machine Status
