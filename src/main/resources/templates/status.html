@@ -163,11 +163,11 @@
                     // 可用的 available
                     // 总的 total
                     // 可用率 = 可用的 available / 总的 total
-                    // 结果 保留2位小数 四舍五入
+                    // 结果 保留4位小数 四舍五入
                     // console.log(result.data.result.mem.available)
                     // console.log(result.data.result.mem.total)
-                    this.mem_free_percent = Decimal(result.data.result.mem.available).div(Decimal(result.data.result.mem.total)).toFixed(2, Decimal.ROUND_HALF_UP)
-                    // 结果再乘以100 变成 x% 比如 1/4 = 0.25 = 25%
+                    this.mem_free_percent = Decimal(result.data.result.mem.available).div(Decimal(result.data.result.mem.total)).toFixed(4, Decimal.ROUND_HALF_UP)
+                    // 结果再乘以100 变成 x.yz % 比如 1/4 = 0.2500 = 25.00% 然后显示 25.00即可
                     this.mem_free_percent = Decimal(this.mem_free_percent).mul(Decimal(100))
                     // 100 - free = used
                     this.mem_used_percent = Decimal(100).sub(Decimal(this.mem_free_percent))
