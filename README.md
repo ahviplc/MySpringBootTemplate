@@ -3,6 +3,9 @@
 MySpringBootTemplate: 一个SpringBoot开发模板项目,内置了优雅的处理全局异常.
 https://gitee.com/ahviplc/MySpringBootTemplate
 
+ahviplc/getyourmachineinfo - Docker Image | Docker Hub
+https://hub.docker.com/r/ahviplc/getyourmachineinfo
+
 Docker Hub for getyourmachineinfo
 https://hub.docker.com/repository/docker/ahviplc/getyourmachineinfo
 
