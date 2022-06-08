@@ -17,7 +17,7 @@ docker run -di -p 9527:9527 \
 --name myGetYourMachineInfo \
 -e APP_NAME='Just Show Your Machine Info' \
 -e WHO_AM_I='LC' \
-getyourmachineinfo:latest
+ahviplc/getyourmachineinfo:latest
 ```
 
 > docker pull ahviplc/getyourmachineinfo:v1.0.1
@@ -31,7 +31,7 @@ docker run -di -p 9527:9527 \
 --name myGetYourMachineInfo \
 -e APP_NAME='Just Show Your Machine Info' \
 -e WHO_AM_I='LC' \
-getyourmachineinfo:v1.0.1
+ahviplc/getyourmachineinfo:v1.0.1
 ```
 
 浏览器访问 测试接口
@@ -109,6 +109,9 @@ https://blog.csdn.net/qq_38135680/article/details/118157464
 
 vue中使用定时器 - 简书
 https://www.jianshu.com/p/2165d4a0ab26
+
+解决删除镜像时'image is referenced in multiple repositories'-CSDN博客_image is referenced
+https://blog.csdn.net/kan2016/article/details/86062518
 ```
 
 # 其他说明
@@ -168,20 +171,22 @@ SpringBoot的项目已经对有一定的异常处理了，但是对于我们开�
 
 # Docker相关
 
+## 打包镜像
+
 ```markdown
 将  
-target/MySpringBootTemplate-0.0.1-SNAPSHOT.jar  
+target/MySpringBootTemplate-1.0.1-SNAPSHOT.jar  
 和    
 Dockerfile  
 一起传到服务器端(已安装Docker环境) 放在同级目录
 
 然后执行指令 根据此 Dockerfile 创建 Docker 镜像 此镜像命名必须都是小写字母
 
-docker build -t getyourmachineinfo:v1.0.0 .
+docker build -t getyourmachineinfo:v1.0.1 .
 
-然后执行 创建 Docker 容器
+创建 Docker 容器(下面几个 docker run 均是从自己手动 build 的镜像来创建容器)
 
-docker run -di -p 9527:9527 --name myGetYourMachineInfo getyourmachineinfo:v1.0.0
+docker run -di -p 9527:9527 --name myGetYourMachineInfo getyourmachineinfo:v1.0.1
 
 带环境变量的执行 创建 Docker 容器 可改变默认的自定义环境变量
 
@@ -191,7 +196,7 @@ docker run -di -p 9527:9527 \
 --name myGetYourMachineInfo \
 -e APP_NAME='Just Show Your Machine Info' \
 -e APP_PORT=9527 \
-getyourmachineinfo:v1.0.0
+getyourmachineinfo:v1.0.1
 
 这个指定了 WHO_AM_I 我是谁 使用下面这个
 
@@ -199,7 +204,7 @@ docker run -di -p 9527:9527 \
 --name myGetYourMachineInfo \
 -e APP_NAME='Just Show Your Machine Info' \
 -e WHO_AM_I='LC' \
-getyourmachineinfo:v1.0.0
+getyourmachineinfo:v1.0.1
 
 登录守护式容器
 
@@ -208,6 +213,35 @@ docker exec -it myGetYourMachineInfo /bin/bash
 查看日志
 
 docker logs -f --tail=30 myGetYourMachineInfo
+```
+
+## 发布镜像
+
+> 发布镜像到 Docker Hub
+
+```markdown
+1.0 先命令行登录
+
+docker login
+
+2.0 再打个tag标签:
+将镜像打了一个标签，相当于重命名一样，让名称尽可能规范
+
+当前版 v1.0.x
+
+docker tag getyourmachineinfo:v1.0.1 ahviplc/getyourmachineinfo:v1.0.1
+
+当前最新版 latest
+
+docker tag getyourmachineinfo:v1.0.1 ahviplc/getyourmachineinfo:latest
+
+3.0 将镜像push上传到官方Docker Hub 上
+
+docker push ahviplc/getyourmachineinfo:v1.0.1
+
+和
+
+docker push ahviplc/getyourmachineinfo:latest
 ```
 
 # 一些接口总览
