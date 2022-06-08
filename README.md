@@ -242,6 +242,10 @@ docker push ahviplc/getyourmachineinfo:v1.0.1
 和
 
 docker push ahviplc/getyourmachineinfo:latest
+
+4.0 一切进度条跑完之后 退出登录
+
+docker logout
 ```
 
 # 一些接口总览
