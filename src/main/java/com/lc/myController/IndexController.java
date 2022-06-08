@@ -13,11 +13,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
+	/**
+	 * status页
+	 *
+	 * @return
+	 */
 	@RequestMapping("/")
 	public String index() {
-		return "index";
+		return "status";
 	}
 
+	/**
+	 * index页
+	 *
+	 * @return
+	 */
 	@RequestMapping("/index")
 	public String index2() {
 		return "index";

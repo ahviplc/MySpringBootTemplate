@@ -56,7 +56,7 @@ public class myRestController {
 		OperatingSystem thisOperatingSystem = OshiUtil.getOs();
 		return ResultBody.success(Dict.create()
 				.set("cpu", currentCpuInfo)
-				.set("cpu-desc", currentCpuInfo.toString())
+				.set("cpu_desc", currentCpuInfo.toString())
 				.set("mem", OshiUtil.getMemory())
 				.set("disk", OshiUtil.getDiskStores())
 				.set("os", thisOperatingSystem.getFamily() + StrUtil.SPACE + thisOperatingSystem.getVersionInfo().toString())
@@ -74,7 +74,7 @@ public class myRestController {
 		OperatingSystem thisOperatingSystem = OshiUtil.getOs();
 		return ResultBody.success(Dict.create()
 				.set("cpu", currentCpuInfo)
-				.set("cpu-desc", currentCpuInfo.toString())
+				.set("cpu_desc", currentCpuInfo.toString())
 		);
 	}
 

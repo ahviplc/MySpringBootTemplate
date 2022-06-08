@@ -91,6 +91,24 @@ http://www.gimoo.net/t/1909/5d7dc5519c0e4.html
 
 vue2的生命周期_旧梦ぷ如烟的博客-CSDN博客_vue2生命周期
 https://blog.csdn.net/m0_69974492/article/details/124348644
+
+spring boot profile配置和启动时no active profile set, falling back to default profiles: default的问题_beAwesomeToday的博客-CSDN博客
+https://blog.csdn.net/benbenniaono1/article/details/105632264
+
+解决js浮点数加法减法乘除法精度丢失问题 - 自处理或者使用开源js-CSDN博客
+https://blog.csdn.net/InternetJava/article/details/109473812
+
+decimal.JS 快速入门 - 简书
+https://www.jianshu.com/p/429637a1c80e
+
+Vue的生命周期_执手天涯@的博客-vue生命周期
+https://blog.csdn.net/m0_37911124/article/details/123481146
+
+js定时器_成神之路.java的博客-js 定时器
+https://blog.csdn.net/qq_38135680/article/details/118157464
+
+vue中使用定时器 - 简书
+https://www.jianshu.com/p/2165d4a0ab26
 ```
 
 # 其他说明
@@ -218,15 +236,26 @@ http://localhost:9527/api/os
 http://localhost:9527/api/env
 ```
 
+```markdown
+首页(status 状态页)
+Just Show Your Machine Status
+http://localhost:9527/
+
+Just Show Your Machine Info
+http://localhost:9527/index
+```
+
 # ChangeLog
 
-## v1.0.0
+## v1.0.0 | 20220607
 
 > 完成:核心功能接口和页面展示
 
 > 待做:环形展示内存使用率和cpu使用率等
 
-## v1.0.1
+## v1.0.1 | 20220608
+
+> 完成:环形展示内存使用率和cpu使用率等
 
 TODO
 
