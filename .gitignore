@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### 使用 logback 的自定义日志文件夹 ###
+logs
+
 ### STS ###
 .apt_generated
 .classpath

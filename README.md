@@ -124,6 +124,12 @@ https://blog.csdn.net/to_real/article/details/109238239
 
 关于PO、BO、VO、DTO、DAO、POJO等概念的理解_二木成林的博客-CSDN博客_bo po vo
 https://blog.csdn.net/cnds123321/article/details/119082379
+
+Springboot项目使用Logback把日志输出到控制台或输出到文件 - 简书
+https://www.jianshu.com/p/0cc29d3f775a
+
+mogu_admin/src/main/resources/logback-spring.xml · 陌溪/蘑菇博客 - Gitee.com
+https://gitee.com/moxi159753/mogu_blog_v2/blob/Nacos/mogu_admin/src/main/resources/logback-spring.xml
 ```
 
 # 其他说明
@@ -318,6 +324,8 @@ http://localhost:9527/index
 ## v1.0.2 | 20220620 to future | In Coding
 
 > 完成:日志切面
+
+> 完成:引入日志logback
 
 > todo
 
