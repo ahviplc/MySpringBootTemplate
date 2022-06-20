@@ -11,6 +11,7 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication
 @ComponentScan(value = "com.lc.myController")
 @ComponentScan(value = "com.lc.myException")
+@ComponentScan(value = "com.lc.myAspect")
 public class MySpringBootTemplateApplication {
 
 	public static void main(String[] args) {

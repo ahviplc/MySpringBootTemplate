@@ -115,6 +115,15 @@ https://www.jianshu.com/p/2165d4a0ab26
 
 解决删除镜像时'image is referenced in multiple repositories'-CSDN博客_image is referenced
 https://blog.csdn.net/kan2016/article/details/86062518
+
+SpringBoot中使用Aspect实现切面，超详细_Java编程_yyds的博客-CSDN博客_aspect切面
+https://blog.csdn.net/DDDYSz/article/details/123378554
+
+日志切面_to_real的博客-CSDN博客_日志切面
+https://blog.csdn.net/to_real/article/details/109238239
+
+关于PO、BO、VO、DTO、DAO、POJO等概念的理解_二木成林的博客-CSDN博客_bo po vo
+https://blog.csdn.net/cnds123321/article/details/119082379
 ```
 
 # 其他说明
@@ -140,13 +149,19 @@ SpringBoot的项目已经对有一定的异常处理了，但是对于我们开�
 * 【@ComponentScan(value = "com.lc.myController")】
 *
 * 已在 com/lc/MySpringBootTemplate/MySpringBootTemplateApplication.java:12 添加
+*
 ```
 
 ```markdown
+*
 * com/lc/myException/GlobalExceptionHandler.java 也需要添加进 组件扫描 注解
-  *【@ComponentScan(value = "com.lc.myException")】
+* 【@ComponentScan(value = "com.lc.myException")】
 *
 * 已在 com/lc/MySpringBootTemplate/MySpringBootTemplateApplication.java:13 添加
+*
+* 同理 【@ComponentScan(value = "com.lc.myAspect")】 在 line 14 为了
+* 【com.lc.myAspect.aspect.SysLogAspect】和【com.lc.myAspect.SysLogService】
+*
 ```
 
 ## git提交的一些说明
@@ -168,7 +183,7 @@ SpringBoot的项目已经对有一定的异常处理了，但是对于我们开�
 * feat: ###
 *
 * 性能提升的时候
-* perf: ####
+* perf: ###
 *
 ```
 
@@ -299,6 +314,14 @@ http://localhost:9527/index
 ## v1.0.1 | 20220608
 
 > 完成:环形展示内存使用率和cpu使用率等
+
+## v1.0.2 | 20220620 to future | In Coding
+
+> 完成:日志切面
+
+> todo
+
+## v1.0.x
 
 TODO
 
