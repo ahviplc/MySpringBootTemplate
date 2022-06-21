@@ -59,6 +59,31 @@ http://localhost:9527/api/ping
 
 Done.
 
+# 其他启动方式
+
+`win下,打开cmd,输入以下指令 将cmd的编码为UTF-8编码`
+> chcp 65001
+
+`打包和运行`
+
+```markdown
+1. 打包   
+   maven clean package
+
+2. 运行   
+   进入目录【MySpringBootTemplate/target/】   
+   执行  
+   java -jar .\MySpringBootTemplate-1.0.1-SNAPSHOT.jar
+
+3. 重要的一行maven命令 | can work
+
+> mvn -T 1C clean source:jar javadoc:javadoc install -Dmaven.test.skip=true -Dmaven.javadoc.skip=false
+
+上面的一行命令代表:清理安装并生成source.jar 生成javadoc 跳过test的junit单元测试 不跳过javadoc文档生成   
+-Dmaven.test.skip=true 跳过test的junit单元测试   
+-Dmaven.javadoc.skip=false 不跳过javadoc文档生成
+```
+
 # 一些链接
 
 ```markdown
@@ -130,6 +155,9 @@ https://www.jianshu.com/p/0cc29d3f775a
 
 mogu_admin/src/main/resources/logback-spring.xml · 陌溪/蘑菇博客 - Gitee.com
 https://gitee.com/moxi159753/mogu_blog_v2/blob/Nacos/mogu_admin/src/main/resources/logback-spring.xml
+
+Java Cmd运行Jar出现乱码的解决方案_java_脚本之家
+https://www.jb51.net/article/222386.htm
 ```
 
 # 其他说明
