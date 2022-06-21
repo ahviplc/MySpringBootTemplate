@@ -9,9 +9,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
-@ComponentScan(value = "com.lc.myController")
-@ComponentScan(value = "com.lc.myException")
-@ComponentScan(value = "com.lc.myAspect")
+@ComponentScan(basePackages = {
+		"com.lc.myController",
+		"com.lc.myException",
+		"com.lc.myAspect"})
 public class MySpringBootTemplateApplication {
 
 	public static void main(String[] args) {

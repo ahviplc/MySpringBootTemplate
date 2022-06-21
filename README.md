@@ -170,6 +170,29 @@ SpringBoot的项目已经对有一定的异常处理了，但是对于我们开�
 *
 ```
 
+> 如下所示
+
+```java
+
+@ComponentScan(value = "com.lc.myController")
+@ComponentScan(value = "com.lc.myException")
+@ComponentScan(value = "com.lc.myAspect")
+public class MySpringBootTemplateApplication {
+}
+```
+
+> 也可以下面的这种写法
+
+```java
+
+@ComponentScan(basePackages = {
+		"com.lc.myController",
+		"com.lc.myException",
+		"com.lc.myAspect"})
+public class MySpringBootTemplateApplication {
+}
+```
+
 ## git提交的一些说明
 
 ```markdown
