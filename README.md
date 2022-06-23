@@ -9,6 +9,19 @@ https://hub.docker.com/r/ahviplc/getyourmachineinfo
 Docker Hub for getyourmachineinfo
 https://hub.docker.com/repository/docker/ahviplc/getyourmachineinfo
 
+# 相关项目仓库
+
+```markdown
+vulcan: vulcan:一个 Spring Boot 多模块项目
+https://gitee.com/ahviplc/vulcan
+
+hello-spring-boot-starter: 一个Spring Boot的自定义starter项目
+https://gitee.com/ahviplc/hello-spring-boot-starter
+
+GitHub - ahviplc/maven-repository: LC的私人maven仓库.
+https://github.com/ahviplc/maven-repository
+```
+
 # 如何使用 Docker 部署我
 
 > docker pull ahviplc/getyourmachineinfo:latest
