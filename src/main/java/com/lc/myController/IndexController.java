@@ -32,4 +32,14 @@ public class IndexController {
 	public String index2() {
 		return "index";
 	}
+
+	/**
+	 * layui-vue-index页
+	 *
+	 * @return
+	 */
+	@RequestMapping("/layuiVueIndex")
+	public String layuiVueIndex() {
+		return "layui-vue-index";
+	}
 }

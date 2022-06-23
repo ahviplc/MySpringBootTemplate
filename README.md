@@ -174,6 +174,15 @@ https://www.jb51.net/article/222386.htm
 
 完美解决SpringBoot中properties配置文件出现中文输出乱码问题_pink-fei的博客-CSDN博客_properties springboot 中文乱码
 https://blog.csdn.net/weixin_46005650/article/details/121407288
+
+Layui - Vue 开源前端 UI 框架
+http://www.layui-vue.com/zh-CN/index
+
+layui-vue: layui - vue（谐音：类 UI) 是 一 套 Vue 3.0 的 桌 面 端 组 件 库.
+https://gitee.com/layui/layui-vue
+
+GitHub - layui/layui-vue: layui - vue（谐音：类 UI) 是 一 套 Vue 3.0 的 桌 面 端 组 件 库
+https://github.com/layui/layui-vue
 ```
 
 # 其他说明
@@ -377,6 +386,9 @@ http://localhost:9527/
 
 Just Show Your Machine Info
 http://localhost:9527/index
+
+layui-vue和vue3的首页
+http://localhost:9527/layuiVueIndex
 ```
 
 # ChangeLog
