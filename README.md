@@ -171,6 +171,9 @@ https://gitee.com/moxi159753/mogu_blog_v2/blob/Nacos/mogu_admin/src/main/resourc
 
 Java Cmd运行Jar出现乱码的解决方案_java_脚本之家
 https://www.jb51.net/article/222386.htm
+
+完美解决SpringBoot中properties配置文件出现中文输出乱码问题_pink-fei的博客-CSDN博客_properties springboot 中文乱码
+https://blog.csdn.net/weixin_46005650/article/details/121407288
 ```
 
 # 其他说明
