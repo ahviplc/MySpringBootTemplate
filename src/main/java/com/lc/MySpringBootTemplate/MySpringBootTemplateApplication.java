@@ -55,10 +55,10 @@ public class MySpringBootTemplateApplication implements CommandLineRunner, Appli
         AuditManager.setAuditEnable(true);
 
         //【MessageCollector】和【MessageReporter】只能二选一
-		// 设置 SQL 审计收集器
+        // 设置 SQL 审计收集器
         // 控制台输出
-		// collector = new ConsoleMessageCollector();
-		// AuditManager.setMessageCollector(collector);
+        // collector = new ConsoleMessageCollector();
+        // AuditManager.setMessageCollector(collector);
 
         // 设置自己的 自定义 MessageReporter
         // 输出到log文件中【MySpringBootTemplate\logs】
