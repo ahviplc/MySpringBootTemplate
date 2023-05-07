@@ -1,5 +1,7 @@
 # MySpringBootTemplate
 
+> 这是Mybatis-Flex版本
+
 > https://github.com/ahviplc/MySpringBootTemplate
 
 MySpringBootTemplate: 一个SpringBoot开发模板项目,内置了优雅的处理全局异常.
@@ -185,6 +187,18 @@ https://gitee.com/layui/layui-vue
 
 GitHub - layui/layui-vue: layui - vue（谐音：类 UI) 是 一 套 Vue 3.0 的 桌 面 端 组 件 库
 https://github.com/layui/layui-vue
+
+一个优雅的 Mybatis 增强框架
+https://mybatis-flex.com/
+
+Mybatis-Flex： 更灵活、更轻量、更好用
+https://gitee.com/mybatis-flex/mybatis-flex
+
+mybatis-flex is an elegant Mybatis Enhancement Framework
+https://github.com/mybatis-flex/mybatis-flex
+
+mybatis-flex各个示例项目
+https://github.com/mybatis-flex/mybatis-flex/blob/main/mybatis-flex-test
 ```
 
 # 其他说明
@@ -377,6 +391,20 @@ http://localhost:9527/api/os
 
 环境变量信息
 http://localhost:9527/api/env
+```
+
+# mybatis-flex接口
+
+```markdown
+http://localhost:9527/api/account/all
+
+http://localhost:9527/api/account/page
+
+http://localhost:9527/api/account/byName/haha1
+
+http://localhost:9527/api/account/byId/1
+
+http://localhost:9527/api/account/t1
 ```
 
 # 一些前端展示页面总览
