@@ -1,5 +1,6 @@
 package com.lc.myEntity;
 
+import com.lc.myInterface.MySetListener;
 import com.mybatisflex.annotation.Id;
 import com.mybatisflex.annotation.KeyType;
 import com.mybatisflex.annotation.Table;
@@ -8,7 +9,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@Table("tb_account")
+@Table(value = "tb_account", onSet = MySetListener.class)
 public class Account {
 
     @Id(keyType = KeyType.Auto)
