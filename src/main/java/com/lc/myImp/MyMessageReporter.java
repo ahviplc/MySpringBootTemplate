@@ -1,4 +1,4 @@
-package com.lc.myInterface;
+package com.lc.myImp;
 
 import cn.hutool.log.StaticLog;
 import com.mybatisflex.core.audit.AuditMessage;

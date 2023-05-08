@@ -1,6 +1,6 @@
 package com.lc.myEntity;
 
-import com.lc.myInterface.MySetListener;
+import com.lc.myImp.MySetListener;
 import com.mybatisflex.annotation.Id;
 import com.mybatisflex.annotation.KeyType;
 import com.mybatisflex.annotation.Table;

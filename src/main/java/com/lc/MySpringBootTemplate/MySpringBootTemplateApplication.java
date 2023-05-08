@@ -1,13 +1,12 @@
 package com.lc.MySpringBootTemplate;
 
 import cn.hutool.core.date.DateUtil;
-import cn.hutool.json.JSONUtil;
 import cn.hutool.log.StaticLog;
-import com.lc.myInterface.MyMessageReporter;
+//import com.mybatisflex.core.audit.ConsoleMessageCollector;
+//import com.mybatisflex.core.audit.MessageCollector;
 import com.mybatisflex.core.audit.AuditManager;
-import com.mybatisflex.core.audit.ConsoleMessageCollector;
-import com.mybatisflex.core.audit.MessageCollector;
 import com.mybatisflex.core.audit.MessageReporter;
+import com.lc.myImp.MyMessageReporter;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -57,7 +56,7 @@ public class MySpringBootTemplateApplication implements CommandLineRunner, Appli
         //【MessageCollector】和【MessageReporter】只能二选一
         // 设置 SQL 审计收集器
         // 控制台输出
-        // collector = new ConsoleMessageCollector();
+        // MessageCollector collector = new ConsoleMessageCollector();
         // AuditManager.setMessageCollector(collector);
 
         // 设置自己的 自定义 MessageReporter

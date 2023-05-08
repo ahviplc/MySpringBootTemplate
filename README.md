@@ -255,9 +255,9 @@ public class MySpringBootTemplateApplication {
 ```java
 
 @ComponentScan(basePackages = {
-		"com.lc.myController",
-		"com.lc.myException",
-		"com.lc.myAspect"})
+        "com.lc.myController",
+        "com.lc.myException",
+        "com.lc.myAspect"})
 public class MySpringBootTemplateApplication {
 }
 ```
@@ -285,6 +285,15 @@ public class MySpringBootTemplateApplication {
 *
 * 文档编辑相关的时候
 * docs: ###
+*
+* 格式化、缺少分号、项目结构优化等；无生产代码更改
+* style: ###
+*
+* 重构生产代码，例如重命名变量
+* refactor: ###
+*
+* 添加缺失的测试，重构测试；无生产代码更改
+* test: ###
 *
 ```
 
