@@ -50,7 +50,8 @@ public class MySpringBootTemplateApplication implements CommandLineRunner, Appli
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
         System.out.println("onApplicationEvent");
-        //开启审计功能
+        // 开启审计功能
+        //【https://mybatis-flex.com/zh/core/audit.html】
         AuditManager.setAuditEnable(true);
 
         //【MessageCollector】和【MessageReporter】只能二选一

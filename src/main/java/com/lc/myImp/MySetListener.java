@@ -5,7 +5,8 @@ import com.mybatisflex.annotation.SetListener;
 
 /**
  * @Table 注解 onSet 使用监听器
- * https://mybatis-flex.com/zh/core/table.html#onset
+ * <p>
+ * 【https://mybatis-flex.com/zh/core/table.html#onset】
  */
 public class MySetListener implements SetListener {
 
