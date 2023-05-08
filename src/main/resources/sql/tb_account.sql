@@ -4,7 +4,7 @@
  Source Server         : PG-postgres-nas
  Source Server Type    : PostgreSQL
  Source Server Version : 140007 (140007)
- Source Host           : 192.168.#.#:5432
+ Source Host           : 192.168.192.193:5432
  Source Catalog        : postgres
  Source Schema         : public
 
@@ -12,7 +12,7 @@
  Target Server Version : 140007 (140007)
  File Encoding         : 65001
 
- Date: 08/05/2023 13:03:59
+ Date: 08/05/2023 13:19:00
 */
 
 
@@ -32,5 +32,6 @@ CREATE TABLE "public"."tb_account" (
 -- Records of tb_account
 -- ----------------------------
 INSERT INTO "public"."tb_account" VALUES (1, 'haha1', 1, '2023-05-08 00:30:10');
-INSERT INTO "public"."tb_account" VALUES (2, '2', 101, '2023-05-08 01:37:16');
-INSERT INTO "public"."tb_account" VALUES (3, '3', 99, '2023-05-08 01:37:29');
+INSERT INTO "public"."tb_account" VALUES (2, 'haha2', 101, '2023-05-08 01:37:16');
+INSERT INTO "public"."tb_account" VALUES (3, 'LC', 99, '2023-05-08 01:37:29');
+INSERT INTO "public"."tb_account" VALUES (4, 'LC', 100, '2023-05-08 13:12:10');
