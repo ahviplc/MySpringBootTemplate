@@ -259,6 +259,19 @@ public class accountRestController {
         return ResultBody.success(accountMapper.selectListByQuery(query2));
     }
 
+    @SysLog(value = "我是account接口t15测试切面日志")
+    @GetMapping("/account/t15")
+    public ResultBody t15() {
+        // 构造 QueryWrapper | orderBy 正确使用
+        //【SELECT tb_account.user_name, SUM(tb_account.age) FROM tb_account GROUP BY tb_account.user_name】
+        // 下面拼接出来的sql【SELECT "user_name", SUM("age") AS age FROM "tb_account" GROUP BY "user_name"】
+        QueryWrapper queryWrapper = QueryWrapper.create()
+                .select(ACCOUNT.USER_NAME, sum(ACCOUNT.AGE).as("age"))
+                .from(ACCOUNT)
+                .groupBy(ACCOUNT.USER_NAME);
+        return ResultBody.success(accountMapper.selectListByQuery(queryWrapper));
+    }
+
     // todo
     // go on
 }
