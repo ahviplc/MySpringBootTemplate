@@ -262,9 +262,9 @@ public class MySpringBootTemplateApplication {
 ```java
 
 @ComponentScan(basePackages = {
-        "com.lc.myController",
-        "com.lc.myException",
-        "com.lc.myAspect"})
+		"com.lc.myController",
+		"com.lc.myException",
+		"com.lc.myAspect"})
 public class MySpringBootTemplateApplication {
 }
 ```
@@ -430,8 +430,14 @@ http://localhost:9527/api/account/t1
 Just Show Your Machine Status
 http://localhost:9527/
 
-Just Show Your Machine Info
+Just Show Your Machine Info by vue2.6.14
 http://localhost:9527/index
+
+Just Show Your Machine Info by vue2.7.14
+http://localhost:9527/index2
+
+vue3使用实例 这是Vue.js v3.3.2版本
+http://localhost:9527/index3
 
 layui-vue和vue3的首页
 http://localhost:9527/layuiVueIndex

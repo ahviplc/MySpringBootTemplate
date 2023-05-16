@@ -34,6 +34,26 @@ public class IndexController {
 	}
 
 	/**
+	 * index2页
+	 *
+	 * @return
+	 */
+	@RequestMapping("/index2")
+	public String index3() {
+		return "index-vue2.7";
+	}
+
+	/**
+	 * index3页
+	 *
+	 * @return
+	 */
+	@RequestMapping("/index3")
+	public String index4() {
+		return "index-vue3";
+	}
+
+	/**
 	 * layui-vue-index页
 	 *
 	 * @return
