@@ -10,15 +10,15 @@ import java.util.Date;
 
 @Data
 @Table(value = "tb_account", onSet = MySetListener.class)
-public class Account {
+public class TbAccount {
 
-    @Id(keyType = KeyType.Auto)
-    private Long id;
-    private String userName;
-    private Integer age;
-    private Date birthday;
+	@Id(keyType = KeyType.Auto)
+	private Long id;
+	private String userName;
+	private Integer age;
+	private Date birthday;
 
-    //getter setter
+	//getter setter
 
 //    public Long getId() {
 //        return id;

@@ -3,8 +3,10 @@
 <mapper namespace="com.lc.myMapper.MyAccountMapper">
 
     <!-- selectByName -->
-    <select id="selectByName" resultType="com.lc.myEntity.Account">
-        select * from tb_account where user_name = #{name}
+    <select id="selectByName" resultType="com.lc.myEntity.TbAccount">
+        select *
+        from tb_account
+        where user_name = #{name}
     </select>
 
 </mapper>
